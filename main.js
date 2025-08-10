@@ -58,9 +58,9 @@ function update(time, delta) {
 
     // Dönüş: A/D veya sol/sağ oklarıyla
     if (cursors.left.isDown) {
-        directionAngle -= TURN_SPEED * dt;
-    } else if (cursors.right.isDown) {
         directionAngle += TURN_SPEED * dt;
+    } else if (cursors.right.isDown) {
+        directionAngle -= TURN_SPEED * dt;
     }
     directionAngle = (directionAngle + 360) % 360;
 
